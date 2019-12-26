@@ -18,11 +18,19 @@ header{
 
 main {
   max-width: 800px;
-  padding: 30px 20px;
+  padding: 0px 20px;
+}
+
+main p{
+  padding: 5px;
 }
 
 h1{
   font-size: 50px;
+}
+
+h2{
+  font-size: 30px;
 }
 
 footer{
@@ -36,4 +44,22 @@ footer p {
 
 footer a:hover{
   color:  #D6D9E6;
+}
+
+.column {
+float: left;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
