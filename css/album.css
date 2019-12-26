@@ -1,0 +1,39 @@
+body{
+  background-color: #B1BCE4;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+}
+
+header{
+  text-align: center;
+  background-color: #D6D9E6;
+  padding: 20px;
+}
+
+.albumArt{
+  border-radius: 10px;
+}
+
+main {
+  max-width: 800px;
+  padding: 30px 20px;
+}
+
+h1{
+  font-size: 50px;
+}
+
+footer{
+  background-color: #D6D9E6;
+  padding: 20px;
+}
+
+footer p {
+  margin:0;
+}
+
+footer a:hover{
+  color:  #D6D9E6;
+}
