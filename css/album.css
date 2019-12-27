@@ -17,7 +17,7 @@ header{
 }
 
 main {
-  max-width: 800px;
+  max-width: 100%;
   padding: 0px 20px;
 }
 
@@ -33,6 +33,61 @@ h2{
   font-size: 30px;
 }
 
+.column1 {
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.left{
+  max-width: 24%;
+  overflow: hidden;
+  box-sizing: border-box;
+
+}
+
+.right{
+  max-width: 74%;
+  box-sizing: border-box;
+}
+
+
+/* Clear floats after the columns */
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row2{
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.row2:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column2{
+  border: 4px dashed rgba(0,0,0,.2);
+  padding: 10px;
+  background-color: lightgrey;
+  float: left;
+  margin-left: 20px;
+  width: 15%;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.column2:first-child{
+  margin-left: 10px;
+}
+
+
 footer{
   background-color: #D6D9E6;
   padding: 20px;
@@ -44,22 +99,4 @@ footer p {
 
 footer a:hover{
   color: black;
-}
-
-.column {
-float: left;
-}
-
-.left {
-  width: 30%;
-}
-
-.right {
-  width: 70%;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }

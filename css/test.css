@@ -6,10 +6,12 @@ h1{
 font-size: 30px;
 color: salmon;
 }
+
 h2{
 font-size: 20px;
 color: teal;
 }
+
 .big{
 font-size: 60px;
 }
@@ -24,4 +26,54 @@ color: navy;
 
 h1 span{
 color: violet;
+}
+
+div.textBox{
+  background-color: lightblue;
+  display: block;
+  padding: 10px;
+}
+
+
+input[type="text"]{
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;;
+  margin: 20px 0;
+}
+
+.row{
+  width: 340px;
+  margin: 0 auto 20px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column{
+  border: 4px dashed rgba(0,0,0,.2);
+  padding: 10px;
+  background-color: lightpink;
+  float: left;
+  margin-left: 20px;
+  width: 100px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.column:first-child{
+  margin-left: 0px;
+}
+
+.stickyBox{
+  background-color: lightblue;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
