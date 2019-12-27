@@ -127,7 +127,7 @@ h2{
 .visiblePopup .close{
   border-width: 2px;
   border-top-width: 0;
-  border-left-width: 0;
+  border-right-width: 0;
   border-color: black;
   background-color: #B1BCE4;
   color: black;
