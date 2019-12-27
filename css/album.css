@@ -74,7 +74,7 @@ h2{
 .column2{
   border: 4px dashed rgba(0,0,0,.2);
   padding: 10px;
-  background-color: lightgrey;
+  background-color: lightgray;
   float: left;
   margin-left: 20px;
   width: 15%;
@@ -83,9 +83,15 @@ h2{
   overflow: hidden;
 }
 
+.column2:hover{
+  border-color: rgba(0,0,0,.4);
+  background-color: silver;
+}
+
 .column2:first-child{
   margin-left: 10px;
 }
+
 
 
 footer{
