@@ -60,7 +60,7 @@ h2{
   clear: both;
 }
 
-.row2{
+.row2 {
   width: 100%;
   margin: 20px 0 20px 0;
 }
@@ -81,6 +81,7 @@ h2{
   box-sizing: border-box;
   cursor: pointer;
   overflow: hidden;
+  color: black;
 }
 
 .column2:hover{
@@ -92,6 +93,56 @@ h2{
   margin-left: 10px;
 }
 
+.visiblePopup{
+  position: fixed;
+  visibility: visible;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.visiblePopup .blanket {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.7);
+}
+
+.visiblePopup .lyrics{
+  box-sizing: border-box;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  top: calc(50% - 40%);
+  left: 50%;
+  margin-left: -40%;
+  overflow: scroll;
+}
+
+.visiblePopup .close{
+  border-width: 2px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-color: black;
+  background-color: #B1BCE4;
+  color: black;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.invisiblePopup {
+  visibility: hidden;
+}
 
 
 footer{
