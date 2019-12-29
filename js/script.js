@@ -7,4 +7,9 @@ var changeVisibility = function () {
   } else {
     document.getElementById('popup').className = "invisiblePopup";
   }
+
+  var changePage = function(pageName){
+    document.location.href = pageName;
+  }
+
 }

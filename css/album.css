@@ -1,5 +1,5 @@
+
 body{
-  background-color: #B1BCE4;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -17,8 +17,11 @@ header{
 }
 
 main {
+  background-color: rgb(177, 188, 228);
   max-width: 100%;
   padding: 0px 20px;
+  border-top: 5px dashed rgb(126, 143, 204);
+  border-bottom: 5px dashed rgb(126, 143, 204);
 }
 
 main p{
@@ -31,6 +34,44 @@ h1{
 
 h2{
   font-size: 30px;
+}
+
+.row0 {
+  margin: -5px 0 70px 0px;
+}
+
+.row0:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column0{
+  border: 3px dashed rgba(136, 142, 166, .7);
+  padding: 2px;
+  background-color: rgba(185, 196, 237, .5);
+  float: left;
+  margin-left: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black
+}
+
+button.column0{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.column0:hover{
+  border-color: rgb(136, 142, 166);
+  background-color: rgba(185, 196, 237, .7);
+}
+
+.column0:first-child{
+  margin-left: 0;
 }
 
 .column1 {
@@ -73,11 +114,11 @@ h2{
 
 .column2{
   border: 4px dashed rgba(0,0,0,.2);
-  padding: 10px;
+  padding: 5px;
   background-color: lightgray;
   float: left;
   margin-left: 20px;
-  width: 15%;
+  width: 20%;
   box-sizing: border-box;
   cursor: pointer;
   overflow: hidden;
@@ -91,6 +132,16 @@ h2{
 
 .column2:first-child{
   margin-left: 10px;
+}
+
+.songTitle{
+  text-align: center;
+  margin: 5px;
+}
+
+.soundcloud{
+  position: relative;
+  margin-left: calc(50% - 50px);
 }
 
 .visiblePopup{
@@ -147,7 +198,7 @@ h2{
 
 footer{
   background-color: #D6D9E6;
-  padding: 20px;
+  padding: 30px;
 }
 
 footer p {
