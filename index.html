@@ -11,9 +11,9 @@
   <body>
     <!-- header element -->
     <header>
-        <div class="row0">
-          <button class="column0" onclick="changePage(more-info.html);">More Information</button>
-          <button class="column0" onclick="changePage(contact-us.html);">Contact Us</button>
+        <div class="navigationBar">
+          <a class="navigationItem" href="artist-profile.html"><div>Artist Profile</div></a>
+          <a class="navigationItem" href="contact.html"><div>Contact</div></a>
         </div>
 
         <h1><b>College Songs</b></h1>
@@ -22,27 +22,18 @@
 
     <!--main element -->
     <main>
-      <div class="row1">
-        <div class="column1 left"><p><img class="albumArt" width="175" height = "200" alt="album cover" style="float:left" src="img/coverArt.jpg"></p>
-        </div>
-        <div class="column1 right"><h2>Artist Bio:</h2><p>Ella Rand is a singer-songwriter from Hood River, OR. She began playing guitar in her Junior year of high school and fell in love with the instrument.
-        She is currently in college, and writes heartfelt songs about her experiences as well as those of the people around her. "I use music to work through my emotions," she says.
-        " and sometimes they come out on the other side as something worth sharing." With sweet melodies and carefully crafted lyrics, Ella brings her experiences close to the heart of her listeners.</p>
-        </div>
+      <div class="songRow">
+        <div class="songBox" onclick="changeVisibility();"><p class="songTitle">1. Aching Heart</p><iframe class="soundcloud" width="100" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/674280248&color=%2370546c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>
+        <div class="songBox" onclick="changeVisibility();"><p class="songTitle">2. My Friends</p></div>
+        <div class="songBox" onclick="changeVisibility();"><p class="songTitle">3. Another Day</p><iframe class="soundcloud" width="100" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/678727023&color=%2370546c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>
+        <div class="songBox" onclick="changeVisibility();"><p class="songTitle">4. Open Door</p></div>
       </div>
-
-      <div class="row2">
-        <div class="column2" onclick="changeVisibility();"><p class="songTitle">1. Aching Heart</p><iframe class="soundcloud" width="100" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/674280248&color=%2370546c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>
-        <div class="column2" onclick="changeVisibility();"><p class="songTitle">2. My Friends</p></div>
-        <div class="column2" onclick="changeVisibility();"><p class="songTitle">3. Another Day</p><iframe class="soundcloud" width="100" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/678727023&color=%2370546c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>
-        <div class="column2" onclick="changeVisibility();"><p class="songTitle">4. Open Door</p></div>
-      </div>
-      <div class="row2">
-        <div class="column2" onclick="changeVisibility();"><p class="songTitle">5. House</p><iframe class="soundcloud" width="100" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/681125921&color=%2370546c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <div class="songRow">
+        <div class="songBox" onclick="changeVisibility();"><p class="songTitle">5. House</p><iframe class="soundcloud" width="100" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/681125921&color=%2370546c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 </div>
-        <div class="column2" onclick="changeVisibility();"><p class="songTitle">6. Young</p></div>
-        <div class="column2" onclick="changeVisibility();"><p class="songTitle">7. Tea</p></div>
-        <div class="column2" onclick="changeVisibility();"><p class="songTitle">8. Little Things</p></div>
+        <div class="songBox" onclick="changeVisibility();"><p class="songTitle">6. Young</p></div>
+        <div class="songBox" onclick="changeVisibility();"><p class="songTitle">7. Tea</p></div>
+        <div class="songBox" onclick="changeVisibility();"><p class="songTitle">8. Little Things</p></div>
       </div>
 
       <div class="invisiblePopup" id = "popup">
